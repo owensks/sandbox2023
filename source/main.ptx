@@ -63,7 +63,8 @@
     
  <p>This is a great paragraph!</p>
     <p>This is going to be the picture of a rectangle, once I get it working.
-      <image width="20%" xml:id="tikz"><description>A Rectangle</description>
+      <image width="20%" xml:id="tikz">
+      <description>A picture of a small rectangle</description>
       <latex-image>
         \begin{tikzpicture}
           \draw (0,0) rectangle (2,3);
