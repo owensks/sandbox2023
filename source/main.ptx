@@ -58,7 +58,16 @@
 
 <chapter xml:id="ch-A second Chapter">
   <title>A second Chapter</title>
-  
+  <p>This is a great paragraph!</p>
+    <p>
+      <image xml:id="tikz"><description>A Rectangle</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw (0,0) rectangle (2,3);
+        \end{tikzpicture}
+      </latex-image>
+      </image>
+    </p>
 </chapter>
 
     <backmatter xml:id="backmatter">
