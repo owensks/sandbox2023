@@ -12,15 +12,15 @@
   </docinfo>
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Kate's Book</title>
+    <subtitle>A Sandbox of Things</subtitle>
 
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
           <personname>Kate</personname>
           <department>Department of Mathematics</department>
-          <institution>Your institution</institution>
+          <institution>College of Charleston</institution>
         </author>
         <date>
           <today />
@@ -51,7 +51,7 @@
       <section xml:id="sec-homework-solutions">
         <title>Homework Solutions</title>
         <p>
-          This will be where I put in some homework problems and solutions.
+          I have big plans to go back and write homework solutions here.
         </p>
         <subsection xml:id="subsec-techniques-of-integration">
           <title>Techniques of Integration</title>
