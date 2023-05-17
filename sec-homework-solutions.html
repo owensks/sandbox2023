@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework Solutions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="My Great Book">
+<meta property="book:author" content="Kate">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">My Great Book:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<p class="byline">Kate</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="ch-calc2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-calc2.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="chapter-title.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="ch-calc2.html" class="internal"><span class="codenumber">1</span> <span class="title">Calculus II</span></a></div>
+<ul class="structural"><li class="active">
+<div class="toc-item"><a href="sec-homework-solutions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Homework Solutions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-homework-solutions.html#subsec-techniques-of-integration" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Techniques of Integration</span></a></div></li>
+<li><div class="toc-item"><a href="sec-homework-solutions.html#subsec-applications-of-integration" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Applications of Integration</span></a></div></li>
+<li><div class="toc-item"><a href="sec-homework-solutions.html#subsec-sequences-and-series" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Sequences and Series</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-title.html" class="internal"><span class="codenumber">2</span> <span class="title">Chapter title</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-title.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Section title</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-second2.html" class="internal"><span class="codenumber">3</span> <span class="title">A second Chapter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-this-is-a-great-section.html" class="internal"><span class="codenumber">3.1</span> <span class="title">This is a great section</span></a></div></li>
+<li><div class="toc-item"><a href="sec-homework.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Homework</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-homework-solutions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Homework Solutions</span>
+</h2>
+<div class="para" id="p-1">This will be where I put in some homework problems and solutions.</div>
+<section class="subsection" id="subsec-techniques-of-integration"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Techniques of Integration</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-TI1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">TI1 Substitution Method.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI1"><article class="exercise exercise-like"><article class="task exercise-like" id="task-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2">Explain and demonstrate how to find the anti-derivative of <span class="process-math">\(\renewcommand{\log}{\ln} f(x)=7 \, x e^{\left(6 \, x\right)}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="p-4">
+<div class="para">Explain and demonstrate how to evaluate the following definite integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{ 6 }^{ 7 } 7 \, x e^{\left(6 \, x\right)} dx.
+\end{equation*}
+</div>
+</div></article></article></div>
+<aside class="aside aside-like" id="aside-1"><div class="para" id="p-6">
+<a href="" class="xref" data-knowl="./knowl/exercise-TI1.html" title="Checkpoint 1.1.1: TI1 Substitution Method">Checkpoint 1.1.1</a> was taken from Calculus for Team-Based Inquiry Learning. </div></aside><article class="exercise exercise-like" id="exercise-TI2"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI2"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">TI2 Integration by Parts.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI2"><article class="exercise exercise-like"><article class="task exercise-like" id="task-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-7">Explain how to find the anti-derivative of <span class="process-math">\(f(x)=7 \, x \cos\left(2 \, x\right)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="p-9">
+<div class="para">Explain how to evaluate the following definite integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{ 5 }^{ 7 } 7 \, x \cos\left(2 \, x\right) dx.
+\end{equation*}
+</div>
+</div></article></article></div>
+<article class="exercise exercise-like" id="exercise-TI3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">TI3 Integration of Trigonometry.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI3"><article class="exercise exercise-like"><article class="task exercise-like" id="task-5"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-11">Use trigonometric identities and <span class="process-math">\((1-z)^2=1-2z+z^2\)</span> to explain and demonstrate how to find <span class="process-math">\(\displaystyle \int 3 \, \cos\left(x\right)^{2} \sin\left(x\right)^{5} dx\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-6"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-13">Explain and demonstrate how to use double-angle identities to rewrite <span class="process-math">\(\displaystyle \int 16 \, \cos\left(3 \, x\right)^{8} \sin\left(3 \, x\right)^{8} dx\text{.}\)</span> (Do not solve the rewritten integral.)</div></article></article></div>
+<article class="exercise exercise-like" id="exercise-TI4"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI4"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">TI4 Trigonometric Substitutino.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI4"><article class="exercise exercise-like"><div class="introduction" id="introduction-1">
+<div class="para" id="p-15">Consider these given integrals of trignometric functions.</div> <ul class="disc">
+<li id="li-1"><div class="para" id="p-16"><span class="process-math">\(\displaystyle \int \tan^2\theta\,d\theta=\tan\theta-\theta+C\)</span></div></li>
+<li id="li-2"><div class="para" id="p-17"><span class="process-math">\(\displaystyle \int \sec\theta\,d\theta= \log|\sec\theta+\tan\theta|+C\)</span></div></li>
+</ul> <div class="para" id="p-18">Use appropriate trignometric substitutions and the above integrals to find each of the following.</div>
+</div>
+<article class="task exercise-like" id="task-7"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-8"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para logical" id="p-19"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{1}{\sqrt{16 \, x^{2} + 81}}\,dx
+\end{equation*}
+</div></div></article><article class="task exercise-like" id="task-9"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para logical" id="p-21"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{\sqrt{9 \, x^{2} - 4}}{x}\,dx
+\end{equation*}
+</div></div></article><article class="task exercise-like" id="task-10"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para logical" id="p-23"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{49}{\sqrt{-49 \, x^{2} + 16}}\,dx
+\end{equation*}
+</div></div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-TI5"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">TI5 Table of Integrals.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI5"><article class="exercise exercise-like"><div class="para" id="p-25">Using a table of integrals, evaluate <span class="process-math">\(\renewcommand{\log}{\ln} \displaystyle\int -\frac{9}{\sqrt{9 \, x^{2} - 4}} dx\text{.}\)</span>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-TI6"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">TI6 Partial Fractions.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI6"><article class="exercise exercise-like"><article class="task exercise-like" id="task-11"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-12"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-27">Explain and demonstrate how to use partial fractions to decompose <span class="process-math">\(\frac{2 \, x - 101}{x^{2} + 3 \, x - 40}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-13"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para logical" id="p-29">
+<div class="para">Consider the partial fraction decomposition</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\frac{4 \, x^{2} + 3 \, x + 150}{x^{3} + 2 \, x^{2} + 36 \, x + 72}=-\frac{3}{x^{2} + 36} - \frac{4}{x + 2}.
+\end{equation*}
+</div>
+<div class="para">Use this decomposition to compute <span class="process-math">\(\displaystyle\int -\frac{4 \, x^{2} + 3 \, x + 150}{x^{3} + 2 \, x^{2} + 36 \, x + 72}dx\text{.}\)</span>
+</div>
+</div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-TI8"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-TI8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">TI8 Improper Integrals.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-TI8"><article class="exercise exercise-like"><div class="introduction" id="introduction-2"><div class="para" id="p-31">Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges.</div></div>
+<article class="task exercise-like" id="task-14"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-15"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-32"><span class="process-math">\(\displaystyle\int_{ -7 }^{ -6 } \frac{1}{{\left(x + 7\right)}^{2}} dx.\)</span></div></article><article class="task exercise-like" id="task-16"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-34"><span class="process-math">\(\displaystyle\int_{ -1 }^{ +\infty } \frac{1}{{\left(x + 4\right)}^{\frac{5}{9}}} dx.\)</span></div></article><article class="task exercise-like" id="task-17"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para" id="p-36"><span class="process-math">\(\displaystyle\int_{ -1 }^{ +\infty } \frac{1}{{\left(x + 3\right)}^{2}} dx.\)</span></div></article><article class="task exercise-like" id="task-18"><h6 class="heading"><span class="codenumber">(iv)</span></h6>
+<div class="para" id="p-38"><span class="process-math">\(\displaystyle\int_{ 9 }^{ 11 } \frac{1}{{\left(x - 9\right)}^{\frac{5}{9}}} dx.\)</span></div></article></article></article></div></section><section class="subsection" id="subsec-applications-of-integration"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.2</span> <span class="title">Applications of Integration</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-AI1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-AI1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">AI1 Average Values.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-AI1"><article class="exercise exercise-like"><div class="para" id="p-40">Explain and demonstrate how to compute the average value of <span class="process-math">\(f(x)=-15 \, x^{2} + 10 \, x - 1\)</span> over the interval <span class="process-math">\([-4, 4]\text{.}\)</span>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-AI2"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-AI2"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">AI2 Arclength.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-AI2"><article class="exercise exercise-like"><div class="introduction" id="introduction-3"><div class="para" id="p-42">Consider the curve <span class="process-math">\(y=\sqrt{x + 5}\)</span> defined on <span class="process-math">\([1, 2]\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-19"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-20"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-43">Estimate the arclength of this curve with <span class="process-math">\(4\)</span> line segments with <span class="process-math">\(\Delta x = 0.25\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-21"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-45">Find an integral that computes the arclength of this curve.</div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-AI3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-AI3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">AI3 Volumes of Revolution.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-AI3"><article class="exercise exercise-like"><div class="introduction" id="introduction-4"><div class="para" id="p-47">Consider the region bounded by <span class="process-math">\(y=\frac{5}{2} \, x, y=0, x=0, x=3\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-22"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-23"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-48">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="task-24"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-50">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(y\)</span>-axis.</div></article></article></article></div></section><section class="subsection" id="subsec-sequences-and-series"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Sequences and Series</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-SQ1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">SQ1 Sequences.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ1"><article class="exercise exercise-like"><article class="task exercise-like" id="task-25"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-26"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-52">Find the first 5 terms, beginning with <span class="process-math">\(a_{ 0 }\text{,}\)</span> of the sequence defined by the closed formula <span class="process-math">\(a_n=2 \, \left(-4\right)^{n}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-27"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-54">Find the first 5 terms of the sequence defined by the recursive formula <span class="process-math">\(a_{ 1 }= -2, a_{n+1}=a_{n} - 3\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-28"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para" id="p-56">Find a closed form for the following sequence: <span class="process-math">\(3, -9, 27, -81, 243, \dots\)</span>
+</div></article><article class="task exercise-like" id="task-29"><h6 class="heading"><span class="codenumber">(iv)</span></h6>
+<div class="para" id="p-58">Find a recursive form for the following sequence: <span class="process-math">\(4, 9, 14, 19, 24, \dots\)</span>
+</div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-SQ2"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ2"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">SQ2 Sequence Properties and Limits.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ2"><article class="exercise exercise-like"><div class="introduction" id="introduction-5"><div class="para" id="p-60">For each of the following sequences, determine which of the properties: <em class="emphasis">monotonic</em>, <em class="emphasis">bounded</em> and <em class="emphasis">convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges.</div></div>
+<article class="task exercise-like" id="task-30"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-31"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-61"><span class="process-math">\(\displaystyle \left\{ \frac{4 \, n^{3}}{n^{2} + 2} \right\}_{n=0}^\infty\text{.}\)</span></div></article><article class="task exercise-like" id="task-32"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-65"><span class="process-math">\(\displaystyle \left\{ \left(\frac{1}{6}\right)^{n} \right\}_{n=0}^\infty\text{.}\)</span></div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-SQ3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.13</span><span class="period">.</span><span class="space"> </span><span class="title">SQ3 Partial Sum Sequence.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ3"><article class="exercise exercise-like"><article class="task exercise-like" id="task-33"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-34"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="introduction" id="introduction-6"><div class="para" id="p-69">Consider the partial sum sequence <span class="process-math">\(\displaystyle A_n=\left(1\right)+\left(-5\right)+\left(25\right)+\cdots+ \left(1\cdot \left( -5\right)^n \right).\)</span>
+</div></div>
+<article class="task exercise-like" id="task-35"><h6 class="heading"><span class="codenumber">(A)</span></h6>
+<article class="task exercise-like" id="task-36"><h6 class="heading"><span class="codenumber">(A)</span></h6>
+<div class="para" id="p-70">Find a closed form for <span class="process-math">\(A_n\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-37"><h6 class="heading"><span class="codenumber">(B)</span></h6>
+<div class="para" id="p-72">Does <span class="process-math">\(\{A_n\}\)</span> converge? If so, to what value?</div></article></article></article><article class="task exercise-like" id="task-38"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="introduction" id="introduction-7"><div class="para" id="p-74">Consider the partial sum sequence <span class="process-math">\(\displaystyle B_n=\sum_{i=1}^n \left( \frac{1}{3 \, i + 2}-\frac{1}{3 \, i + 5} \right).\)</span>
+</div></div>
+<article class="task exercise-like" id="task-39"><h6 class="heading"><span class="codenumber">(A)</span></h6>
+<article class="task exercise-like" id="task-40"><h6 class="heading"><span class="codenumber">(A)</span></h6>
+<div class="para" id="p-75">Find a closed form for <span class="process-math">\(B_n\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-41"><h6 class="heading"><span class="codenumber">(B)</span></h6>
+<div class="para" id="p-77">Does <span class="process-math">\(\{B_n\}\)</span> converge? If so, to what value?</div></article></article></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-SQ4"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ4"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">SQ4 Geometric Series.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ4"><article class="exercise exercise-like"><div class="para logical" id="p-79">
+<div class="para">Find the limit of the following series.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 + \sum_{n = 1 }^\infty -3\cdot\left(-\frac{2}{3}\right)^n.
+\end{equation*}
+</div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-SQ5"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">SQ5 Basic Convergence Tests.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ5"><article class="exercise exercise-like"><div class="introduction" id="introduction-8"><div class="para" id="p-81">For each of the following series, use the <em class="emphasis">Divergence</em>, <em class="emphasis">Alternating Summation</em> or <em class="emphasis">Integral</em> test to determine if the series converges.</div></div>
+<article class="task exercise-like" id="task-42"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-43"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-82"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{5 \, n^{2} + 4 \, n}{n^{2}}.\)</span></div></article><article class="task exercise-like" id="task-44"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-84"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^{2}}.\)</span></div></article><article class="task exercise-like" id="task-45"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para" id="p-86"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{{\left(n^{4} + 3 \, n^{3}\right)} \left(-1\right)^{n}}{4 \, n^{5} + n^{4} + 4 \, n^{3} + 3 \, n^{2}}.\)</span></div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-SQ6"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">SQ6 Comparison Tests.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ6"><article class="exercise exercise-like"><div class="introduction" id="introduction-9"><div class="para" id="p-88">For each of the following series, determine if it converges or diverges, and explain your choice.</div></div>
+<article class="task exercise-like" id="task-46"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-47"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-89"><span class="process-math">\(\renewcommand{\log}{\ln}\displaystyle \sum_{n= 3 }^\infty \frac{2}{2^{n} + 2}.\)</span></div></article><article class="task exercise-like" id="task-48"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-91"><span class="process-math">\(\renewcommand{\log}{\ln} \displaystyle \sum_{n= 3 }^\infty \frac{3}{3 \, n^{2} + 4 \, n}.\)</span></div></article></article></article></div>
+<article class="exercise exercise-like" id="exercise-SQ7"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.17</span><span class="period">.</span><span class="space"> </span><span class="title">SQ7 Ratio and Root Tests.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ7"><article class="exercise exercise-like"><div class="para" id="p-93">Use the <em class="emphasis">ratio</em> or <em class="emphasis">root</em> test to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n^{n}}{4^{n}}\)</span> converges or diverges.</div></article></div>
+<article class="exercise exercise-like" id="exercise-SQ8"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SQ8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.18</span><span class="period">.</span><span class="space"> </span><span class="title">SQ8 Absolute Convergence.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SQ8"><article class="exercise exercise-like"><div class="introduction" id="introduction-10"><div class="para" id="p-95">For each of the following series, determine if the series is <em class="emphasis">convergent</em>, and if the series is <em class="emphasis">absolutely convergent</em>.</div></div>
+<article class="task exercise-like" id="task-49"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="task-50"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="p-96"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{5 \, \left(-1\right)^{n + 1} n}{2 \cdot 5^{n}}.\)</span></div></article><article class="task exercise-like" id="task-51"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="p-98"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{2 \, \left(-1\right)^{n + 1} n}{2 \, n^{2} + 3}.\)</span></div></article></article></article></div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch-calc2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="chapter-title.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
