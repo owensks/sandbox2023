@@ -46,13 +46,573 @@
       </colophon>
     </frontmatter>
 
+    <chapter xml:id="ch-calc2">
+      <title>Calculus II</title>
+      <section xml:id="sec-homework-solutions">
+        <title>Homework Solutions</title>
+        <p>
+          This will be where I put in some homework problems and solutions.
+        </p>
+        <subsection xml:id="subsec-techniques-of-integration">
+          <title>Techniques of Integration</title>
+          
+              <!-- TI1 Substitution Method -->
+         <exercise xml:id="exercise-TI1"><title>TI1 Substitution Method</title>
+         
+          <task> <statement>
+          <p> Explain and demonstrate how to find the anti-derivative of <m>\renewcommand{\log}{\ln} f(x)=7 \, x e^{\left(6 \, x\right)}</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>
+            \displaystyle \int 7 \, x e^{\left(6 \, x\right)} dx=\frac{7}{6} \, x e^{\left(6 \, x\right)} - \frac{7}{36} \, e^{\left(6 \, x\right)}+C.
+            </m> </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Explain and demonstrate how to evaluate the following definite integral: <me>
+            \int_{ 6 }^{ 7 } 7 \, x e^{\left(6 \, x\right)} dx.</me> </p>
+        </statement>
+        <answer>
+          <p> <m>\displaystyle \int_{ 6 }^{ 7 } 7 \, x e^{\left(6 \, x\right)} dx = \frac{287}{36} \, e^{42} - \frac{245}{36} \, e^{36}.</m> </p>
+        </answer>
+      </task>
+  </exercise>
+    <aside><p><xref ref="exercise-TI1"/> was taken from Calculus for Team-Based Inquiry Learning.
+        <!-- <url href="https://teambasedinquirylearning.github.io/calculus">Calculus for Team-Based Inquiry Learning </url>. -->
+        </p></aside>
+        <!-- TI2 Integration by Parts -->
+<exercise xml:id="exercise-TI2">
+<title>TI2 Integration by Parts</title>
+      <task>
+        <statement>
+          <p> Explain how to find the anti-derivative of <m>f(x)=7 \, x \cos\left(2 \, x\right)</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>\displaystyle \int 7 \, x \cos\left(2 \, x\right) dx=\frac{7}{2} \, x \sin\left(2 \, x\right) + \frac{7}{4} \, \cos\left(2 \, x\right)+C.</m> </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Explain how to evaluate the following definite integral: <me>\int_{ 5 }^{ 7 } 7 \, x \cos\left(2 \, x\right) dx.</me> </p>
+        </statement>
+        <answer>
+          <p> <m>\displaystyle \int_{ 5 }^{ 7 } 7 \, x \cos\left(2 \, x\right) dx = \frac{7}{4} \, \cos\left(14\right) - \frac{7}{4} \, \cos\left(10\right) + \frac{49}{2} \, \sin\left(14\right) - \frac{35}{2} \, \sin\left(10\right).</m> </p>
+        </answer>
+      </task>
+  </exercise>
+  <!-- TI3 Integration of Trigonometry -->
+  <exercise xml:id="exercise-TI3">
+  <title>TI3 Integration of Trigonometry</title>
+  
+         <task>
+        <statement>
+          <p> Use trigonometric identities and <m>(1-z)^2=1-2z+z^2</m> to explain and demonstrate how to find <m>\displaystyle \int 3 \, \cos\left(x\right)^{2} \sin\left(x\right)^{5} dx</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>-\frac{3}{7} \, \cos\left(x\right)^{7} + \frac{6}{5} \, \cos\left(x\right)^{5} - \cos\left(x\right)^{3}+C</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Explain and demonstrate how to use double-angle identities to rewrite <m>\displaystyle \int 16 \, \cos\left(3 \, x\right)^{8} \sin\left(3 \, x\right)^{8} dx</m>. (Do not solve the rewritten integral.) </p>
+        </statement>
+        <answer>
+          <p> <m>\displaystyle \int \frac{1}{16} \, {\left(\cos\left(6 \, x\right) + 1\right)}^{4} {\left(\cos\left(6 \, x\right) - 1\right)}^{4} dx</m>. </p>
+        </answer>
+      </task>
+  </exercise>
+  <!-- TI4 Whatever -->
+  <exercise xml:id="exercise-TI4">
+  <title>TI4 Trigonometric Substitutino</title>
+   
+    <introduction>
+      <p> Consider these given integrals of trignometric functions. </p>
+      <ul>
+        <li>
+          <p>
+            <m>\int \tan^2\theta\,d\theta=\tan\theta-\theta+C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\int \sec\theta\,d\theta= \log|\sec\theta+\tan\theta|+C</m>
+          </p>
+        </li>
+      </ul>
+      <p> Use appropriate trignometric substitutions and the above integrals to find each of the following. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p> <me>\int \frac{1}{\sqrt{16 \, x^{2} + 81}}\,dx</me> </p>
+        </statement>
+        <answer>
+          <p> Substitute <m>x = \frac{9}{4} \, \tan\left(\theta\right)</m> to find <me>\int \frac{1}{\sqrt{16 \, x^{2} + 81}}\,dx = \frac{1}{4} \, \log\left({\left| \frac{4}{9} \, x + \frac{1}{9} \, \sqrt{16 \, x^{2} + 81} \right|}\right) +C</me> </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <me>\int \frac{\sqrt{9 \, x^{2} - 4}}{x}\,dx</me> </p>
+        </statement>
+        <answer>
+          <p> Substitute <m>x = \frac{2}{3} \, \sec\left(\theta\right)</m> to find <me>\int \frac{\sqrt{9 \, x^{2} - 4}}{x}\,dx = \sqrt{9 \, x^{2} - 4} - 2 \, \operatorname{arcsec}\left(\frac{3}{2} \, x\right) +C</me> </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <me>\int \frac{49}{\sqrt{-49 \, x^{2} + 16}}\,dx</me> </p>
+        </statement>
+        <answer>
+          <p> Substitute <m>x = \frac{4}{7} \, \sin\left(\theta\right)</m> to find <me>\int \frac{49}{\sqrt{-49 \, x^{2} + 16}}\,dx = 7 \, \arcsin\left(\frac{7}{4} \, x\right) +C</me> </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- TI5 Integration with Tables -->
+  <exercise xml:id="exercise-TI5">
+  <title>TI5 Table of Integrals</title>
+  
+     <statement>
+      <p> Using a table of integrals, evaluate <m>\renewcommand{\log}{\ln} \displaystyle\int -\frac{9}{\sqrt{9 \, x^{2} - 4}} dx</m>. </p>
+    </statement>
+    <answer>
+      <p>
+        <me>\renewcommand{\log}{\ln} \displaystyle\int -\frac{9}{\sqrt{9 \, x^{2} - 4}} dx = -3 \, \log\left({\left| 3 \, x + \sqrt{9 \, x^{2} - 4} \right|}\right) +C.</me>
+      </p>
+    </answer>
+  </exercise>
+  <!-- TI6 Partial Fractions -->
+  <exercise xml:id="exercise-TI6">
+  <title>TI6 Partial Fractions</title>
+  
+  
+    <task>
+      <task>
+        <statement>
+          <p> Explain and demonstrate how to use partial fractions to decompose <m>\frac{2 \, x - 101}{x^{2} + 3 \, x - 40}</m>. </p>
+        </statement>
+        <answer>
+          <p>
+            <me>\frac{9}{x + 8} - \frac{7}{x - 5}</me>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Consider the partial fraction decomposition <me>-\frac{4 \, x^{2} + 3 \, x + 150}{x^{3} + 2 \, x^{2} + 36 \, x + 72}=-\frac{3}{x^{2} + 36} - \frac{4}{x + 2}.</me> Use this decomposition to compute <m>\displaystyle\int -\frac{4 \, x^{2} + 3 \, x + 150}{x^{3} + 2 \, x^{2} + 36 \, x + 72}dx</m>. </p>
+        </statement>
+        <answer>
+          <p>
+            <me>\renewcommand{\log}{\ln} \displaystyle\int -\frac{4 \, x^{2} + 3 \, x + 150}{x^{3} + 2 \, x^{2} + 36 \, x + 72}dx=\displaystyle\int \left(-\frac{3}{x^{2} + 36} - \frac{4}{x + 2}\right)dx=-\frac{1}{2} \, \arctan\left(\frac{1}{6} \, x\right) - 4 \, \log\left({\left| x + 2 \right|}\right)+C.</me>
+          </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- TI7 Integration Strategy -->
+  <!-- TI8 Improper Integrals -->
+  <exercise xml:id="exercise-TI8">
+  <title>TI8 Improper Integrals</title>
+   
+    <introduction>
+      <p> Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ -7 }^{ -6 } \frac{1}{{\left(x + 7\right)}^{2}} dx.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>Diverges.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ -1 }^{ +\infty } \frac{1}{{\left(x + 4\right)}^{\frac{5}{9}}} dx.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>Diverges.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ -1 }^{ +\infty } \frac{1}{{\left(x + 3\right)}^{2}} dx.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>Converges.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ 9 }^{ 11 } \frac{1}{{\left(x - 9\right)}^{\frac{5}{9}}} dx.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>Converges.</p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+   </subsection>
+  <subsection xml:id="subsec-applications-of-integration">
+    <title>Applications of Integration</title>
+    <!-- AI1 Average Values -->
+      <exercise xml:id="exercise-AI1">
+      <title>AI1 Average Values</title>
+      
+      
+    <statement>
+      <p> Explain and demonstrate how to compute the average value of <m>f(x)=-15 \, x^{2} + 10 \, x - 1</m> over the interval <m>[-4, 4]</m>. </p>
+    </statement>
+    <answer>
+      <p> The average value of <m>f(x)=-15 \, x^{2} + 10 \, x - 1</m> over the interval <m>[-4, 4]</m> is <me>\frac{1}{ 8 } \int_{ -4 }^{ 4 } (-15 \, x^{2} + 10 \, x - 1)dx= -81.</me> </p>
+    </answer>
+  </exercise>
+  <!-- AI2  Arclength-->
+  <exercise xml:id="exercise-AI2">
+<title>AI2 Arclength</title>
+
+
+    <introduction>
+      <p> Consider the curve <m>y=\sqrt{x + 5}</m> defined on <m>[1, 2]</m>. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p> Estimate the arclength of this curve with <m>4</m> line segments with <m>\Delta x = 0.25</m>. </p>
+        </statement>
+        <answer>
+          <p> <me>\begin{array}{|c|c|c|c|c|} \hline x_i &amp; x_{i+1} &amp; f(x_{i}) &amp; f(x_{i+1}) &amp; \text{Length of segment} \\ \hline 1 &amp; 1.25 &amp; 2.4495 &amp; 2.5 &amp; 0.2551 \\ 1.25 &amp; 1.5 &amp; 2.5 &amp; 2.5495 &amp; 0.2549 \\ 1.5 &amp; 1.75 &amp; 2.5495 &amp; 2.5981 &amp; 0.2547 \\ 1.75 &amp; 2.0 &amp; 2.5981 &amp; 2.6458 &amp; 0.2545 \\ \hline \end{array}</me> The estimated length of this curve is 1.0191999999999999. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Find an integral that computes the arclength of this curve. </p>
+        </statement>
+        <answer>
+          <p> The arclength is computed via <me>\int_{ 1 }^{ 2 }\sqrt{1+ \left(\frac{1}{2 \, \sqrt{x + 5}}\right)^2}dx.</me> </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- AI3 Volumes of Revolution -->
+    <exercise xml:id="exercise-AI3">
+    <title>AI3 Volumes of Revolution</title>
+    
+    
+    <introduction>
+      <p> Consider the region bounded by <m>y=\frac{5}{2} \, x, y=0, x=0, x=3</m>. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p>Find an integral which computes the volume of the solid formed by rotating this region about the <m>x</m>-axis.</p>
+        </statement>
+        <answer>
+          <p>Using the washer/disk method, we obtain <me>\int_{ 0 }^{ 3 } \pi \left(\frac{5}{2} \, x\right)^2dx</me> and using the shell method, we obtain <me>\int_0^{ 0 } 2\pi y\left( 3-0\right)dy +\int_{ 0 }^{ \frac{15}{2} } 2\pi y\left( 3-\left(\frac{2}{5} \, y\right)\right)dy.</me></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Find an integral which computes the volume of the solid formed by rotating this region about the <m>y</m>-axis.</p>
+        </statement>
+        <answer>
+          <p>Using the washer/disk method, we obtain <me>\int_0^{ 0 } \pi\left(3^2-0^2\right)dy + \int_{ 0 }^{ \frac{15}{2} } \pi\left(3^2-\left(\frac{2}{5} \, y\right)^2\right)dy</me> and using the shell method, we obtain <me>\int_{ 0 }^{ 3 }2\pi x \left(\frac{5}{2} \, x\right)dx.</me></p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  </subsection>
+<subsection xml:id="subsec-sequences-and-series">
+  <title>Sequences and Series</title>
+  <!-- SQ1 Sequences -->
+   <exercise xml:id="exercise-SQ1">
+   <title>SQ1 Sequences</title>
+   
+   
+    <task>
+      <task>
+        <statement>
+          <p> Find the first 5 terms, beginning with <m>a_{ 0 }</m>, of the sequence defined by the closed formula <m>a_n=2 \, \left(-4\right)^{n}</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>2, -8, 32, -128, 512, \dots</m> </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Find the first 5 terms of the sequence defined by the recursive formula <m>a_{ 1 }= -2, a_{n+1}=a_{n} - 3</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>-2, -5, -8, -11, -14, \dots</m> </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Find a closed form for the following sequence: <m>3, -9, 27, -81, 243, \dots</m> </p>
+        </statement>
+        <answer>
+          <p> Beginning with <m>a_{ 0 }</m>, let <m>a_n=3 \, \left(-3\right)^{n}</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Find a recursive form for the following sequence: <m>4, 9, 14, 19, 24, \dots</m> </p>
+        </statement>
+        <answer>
+          <p> <m>a_{ 1 }= 4, a_{n+1}=a_{n} + 5</m>. </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- SQ2 Sequence Limits -->
+  <exercise xml:id="exercise-SQ2">
+  <title>SQ2 Sequence Properties and Limits</title>
+  
+  
+    <introduction>
+      <p> For each of the following sequences, determine which of the properties: <em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p><m>\displaystyle \left\{ \frac{4 \, n^{3}}{n^{2} + 2} \right\}_{n=0}^\infty</m>.</p>
+        </statement>
+        <answer>
+          <ul>
+            <li>
+              <p>  The sequence is monotonic.   </p>
+            </li>
+            <li>
+              <p>   The sequence is not bounded.  </p>
+            </li>
+            <li>
+              <p>   The sequence does not converge.  </p>
+            </li>
+          </ul>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\displaystyle \left\{ \left(\frac{1}{6}\right)^{n} \right\}_{n=0}^\infty</m>.</p>
+        </statement>
+        <answer>
+          <ul>
+            <li>
+              <p>  The sequence is monotonic.   </p>
+            </li>
+            <li>
+              <p>  The sequence is bounded.   </p>
+            </li>
+            <li>
+              <p>  The sequence converges to <m>0</m>.   </p>
+            </li>
+          </ul>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- SQ3 Partial Sum Sequences -->
+  <exercise xml:id="exercise-SQ3">
+  <title>SQ3 Partial Sum Sequence</title>
+  
+  
+    <task>
+      <task>
+        <introduction>
+          <p> Consider the partial sum sequence <m>\displaystyle A_n=\left(1\right)+\left(-5\right)+\left(25\right)+\cdots+ \left(1\cdot \left( -5\right)^n \right).</m> </p>
+        </introduction>
+        <task>
+          <task>
+            <statement>
+              <p>Find a closed form for <m>A_n</m>.</p>
+            </statement>
+            <answer>
+              <p><m>\displaystyle A_n=-\frac{1}{6} \, \left(-5\right)^{n + 1} + \frac{1}{6}</m>.</p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>Does <m>\{A_n\}</m> converge? If so, to what value?</p>
+            </statement>
+            <answer>
+              <p>   <m>\displaystyle\lim_{n\to\infty} -\frac{1}{6} \, \left(-5\right)^{n + 1} + \frac{1}{6}</m> diverges.  </p>
+            </answer>
+          </task>
+        </task>
+      </task>
+      <task>
+        <introduction>
+          <p> Consider the partial sum sequence <m>\displaystyle B_n=\sum_{i=1}^n \left( \frac{1}{3 \, i + 2}-\frac{1}{3 \, i + 5} \right).</m> </p>
+        </introduction>
+        <task>
+          <task>
+            <statement>
+              <p>Find a closed form for <m>B_n</m>.</p>
+            </statement>
+            <answer>
+              <p><m>\displaystyle B_n=\frac{1}{5}-\frac{1}{3 \, n + 5}</m>.</p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>Does <m>\{B_n\}</m> converge? If so, to what value?</p>
+            </statement>
+            <answer>
+              <p>  <m>\displaystyle\lim_{n\to\infty} \frac{1}{5}-\frac{1}{3 \, n + 5}</m> converges to <m>\frac{1}{5}</m>.   </p>
+            </answer>
+          </task>
+        </task>
+      </task>
+    </task>
+  </exercise>
+  <!-- SQ4 Geometric Series -->
+    <exercise xml:id="exercise-SQ4">
+    <title>SQ4 Geometric Series</title>
+    
+    
+    <statement>
+      <p> Find the limit of the following series. <me>1 + \sum_{n = 1 }^\infty -3\cdot\left(-\frac{2}{3}\right)^n.</me> </p>
+    </statement>
+    <answer>
+      <p> <me>1 + \sum_{n = 1 }^\infty -3\cdot\left(-\frac{2}{3}\right)^n=\frac{11}{5}.</me> </p>
+    </answer>
+  </exercise>
+  <!-- SQ5 Basic Convergence -->
+  <exercise xml:id="exercise-SQ5">
+  <title>SQ5 Basic Convergence Tests</title>
+  
+  
+    <introduction>
+      <p> For each of the following series, use the <em>Divergence</em>, <em>Alternating Summation</em> or <em>Integral</em> test to determine if the series converges. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{n=1}^\infty \frac{5 \, n^{2} + 4 \, n}{n^{2}}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>   <m>\displaystyle \sum_{n=1}^\infty \frac{5 \, n^{2} + 4 \, n}{n^{2}}</m> diverges by the <em>Divergence</em> test.  </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^{2}}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>  <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^{2}}</m> converges by the <em>Integral</em> test.   </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{n=1}^\infty \frac{{\left(n^{4} + 3 \, n^{3}\right)} \left(-1\right)^{n}}{4 \, n^{5} + n^{4} + 4 \, n^{3} + 3 \, n^{2}}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>  <m>\displaystyle \sum_{n=1}^\infty \frac{{\left(n^{4} + 3 \, n^{3}\right)} \left(-1\right)^{n}}{4 \, n^{5} + n^{4} + 4 \, n^{3} + 3 \, n^{2}}</m> converges by the <em>Alternating Summation</em> test.   </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- SQ6 Comparison Tests -->
+   <exercise xml:id="exercise-SQ6">
+   <title>SQ6 Comparison Tests</title>
+   
+   
+    <introduction>
+      <p> For each of the following series, determine if it converges or diverges, and explain your choice. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p>
+            <m>\renewcommand{\log}{\ln}\displaystyle \sum_{n= 3 }^\infty \frac{2}{2^{n} + 2}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= 3 }^\infty \frac{2}{2^{n} + 2}</m> converges.   </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= 3 }^\infty \frac{3}{3 \, n^{2} + 4 \, n}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= 3 }^\infty \frac{3}{3 \, n^{2} + 4 \, n}</m> converges.   </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+  <!-- SQ7 Ratio and Root Tests -->
+  <exercise xml:id="exercise-SQ7">
+  <title>SQ7 Ratio and Root Tests</title>
+  
+  
+    <statement>
+      <p> Use the <em>ratio</em> or <em>root</em> test to determine if <m>\displaystyle \sum_{n=1}^\infty \frac{n^{n}}{4^{n}}</m> converges or diverges. </p>
+    </statement>
+    <answer>
+      <p>   <m>\displaystyle \sum_{n=1}^\infty \frac{n^{n}}{4^{n}}</m> diverges.  </p>
+    </answer>
+  </exercise>
+  <!-- SQ8 Absolute Convergence -->
+  <exercise xml:id="exercise-SQ8">
+  <title>SQ8 Absolute Convergence</title>
+  
+  
+    <introduction>
+      <p> For each of the following series, determine if the series is <em>convergent</em>, and if the series is <em>absolutely convergent</em>. </p>
+    </introduction>
+    <task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{n=1}^\infty \frac{5 \, \left(-1\right)^{n + 1} n}{2 \cdot 5^{n}}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>  <m>\displaystyle \sum_{n=1}^\infty \frac{5 \, \left(-1\right)^{n + 1} n}{2 \cdot 5^{n}}</m> converges and is absolutely convergent.   </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{n=1}^\infty \frac{2 \, \left(-1\right)^{n + 1} n}{2 \, n^{2} + 3}.</m>
+          </p>
+        </statement>
+        <answer>
+          <p>   <m>\displaystyle \sum_{n=1}^\infty \frac{2 \, \left(-1\right)^{n + 1} n}{2 \, n^{2} + 3}</m> converges but is not absolutely convergent.  </p>
+        </answer>
+      </task>
+    </task>
+  </exercise>
+</subsection>
+          </section>
+    </chapter>
+
     <chapter xml:id="chapter-title">
       <title>Chapter title</title>
 
       <section xml:id="section-title">
         <title>Section title</title>
         <p>Hello</p>
-      </section>
+      
+    </section>
 
     </chapter>
 
@@ -67,12 +627,53 @@
       <description>A picture of a small rectangle</description>
       <latex-image>
         \begin{tikzpicture}
-          \draw (0,0) rectangle (2,3);
-        \end{tikzpicture}
-      </latex-image>
+          \draw (0,0) rectangle (1,1);
+        \end{tikzpicture}      
+        </latex-image>
       </image>
     </p>
   </section>
+
+<section xml:id="sec-homework">
+  <title>Homework</title>
+  <p>
+    Emphasizing <em>donut</em> because they are my favorite breakfast food item. Meanwhile, my favorite math formula is <m>\sin(\pi)=1</m> or <me>
+      \sin^2 (x) + \cos^2 (x) = 1.
+    </me>
+    The definition of important <term>vocab</term> words will come later.
+    </p><definition xml:id="def-circle">
+      <statement>
+        <p>
+          A <term>circle</term> is a parallelogram with sides of equal length.
+        </p>
+      </statement>
+    </definition><p>
+  My three favorite numbers are:
+  <ul>
+    <li>
+      <p>
+        <m>1</m>
+      </p>
+    </li>
+    <li>
+          <p>
+    <m>2</m>    
+      </p>
+    </li>
+    <li>
+      <p>
+        Threety
+      </p>
+    </li>
+  </ul>
+  </p>
+  <p>Steven really likes BIG math equations so I will write one here:
+  <me>
+    \frac{\sin(xyz)-e^{yxz}}{2\pi}=1950
+  </me>
+  </p>
+  
+</section>
 </chapter>
 
     <backmatter xml:id="backmatter">
