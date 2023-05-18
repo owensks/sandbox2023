@@ -46,6 +46,7 @@
       </colophon>
     </frontmatter>
 
+<!-- CALCULUS 2 SOLUTIONS CHAPTER -->
     <chapter xml:id="ch-calc2">
       <title>Calculus II</title>
       <section xml:id="sec-homework-solutions">
@@ -604,18 +605,17 @@
 </subsection>
           </section>
     </chapter>
-
+  
+<!-- BLANK CHAPTER FORMAT -->
     <chapter xml:id="chapter-title">
       <title>Chapter title</title>
-
       <section xml:id="section-title">
         <title>Section title</title>
-        <p>Hello</p>
-      
-    </section>
-
+        <p>Hello</p>    
+      </section>
     </chapter>
 
+<!-- KATES SANDBOX CHAPTER -->
 <chapter xml:id="ch-second2">
   <title>A second Chapter</title>
   <section xml:id="sec-this-is-a-great-section">
@@ -657,7 +657,7 @@
     </li>
     <li>
           <p>
-    <m>2</m>    
+    <m>2</m>      
       </p>
     </li>
     <li>
