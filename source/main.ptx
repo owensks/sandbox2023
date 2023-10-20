@@ -46,6 +46,14 @@
       </colophon>
     </frontmatter>
 
+<!-- OL Module -->
+<chapter xml:id="ch-moduleOL">
+<title>OL Orthogonality and Length</title>
+<section xml:id="sec-lengths">
+<title>Lengths, Dot Products, and Orthogonality</title>
+<p>
+I have some big plans.
+
 <!-- CALCULUS 2 SOLUTIONS CHAPTER -->
     <chapter xml:id="ch-calc2">
       <title>Calculus II</title>
