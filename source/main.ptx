@@ -13,13 +13,13 @@
 
   <book xml:id="my-great-book">
     <title>Kate's Book</title>
-    <subtitle>A Sandbox of Things</subtitle>
+    <subtitle>A Sandbox of Things Updated in 2025</subtitle>
 
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
           <personname>Kate</personname>
-          <department>Department of Mathematics</department>
+          <department>Department of Mathematics and Statistics</department>
           <institution>College of Charleston</institution>
         </author>
         <date>
